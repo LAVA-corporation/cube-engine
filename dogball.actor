@@ -1,0 +1,23 @@
+entityactor
+//indentification
+
+//hitbox
+tick / removerepos
+tick / hitbox circlemonster
+
+//vertical motion (jumping)
+upkeytap / yv = 25
+
+//horizontalmotion
+rightkey / dir add 8
+leftkey / dir add -8
+rightkey / xv + 2
+leftkey / xv + -2
+
+//gravity
+tick / yv + -2
+
+//return to original state
+tick / image set playertemplatehit
+tick / cameraX = x
+tick / cameraY = y
